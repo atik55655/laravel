@@ -34,14 +34,17 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
+Route::view('/atik','about');
 
 
 
-Route::get('/about', function(){
+
+
+Route::get('/aboudfgdfgdfgdt', function(){
     return view('about');
 })->name('about');
 
-Route::get('/contact', function(){
+Route::get('/condfgdfgdfgdtact', function(){
     return view('contact');
 })->name('contact');
 

@@ -36,8 +36,8 @@
 
                     
 
-                    <a class="p-6 " style="color: #fff;" href="{{url('about')}}">Aboout</a>
-                    <a style="color: #fff;" href="{{url('contact')}}">Contact</a>
+                    <a class="p-6 " style="color: #fff;" href="{{route('about')}}">Aboout</a>
+                    <a style="color: #fff;" href="{{route('contact')}}">Contact</a>
 
 
 

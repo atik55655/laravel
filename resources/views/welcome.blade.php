@@ -16,7 +16,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+        <div class=">
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
@@ -35,18 +35,34 @@
 
 
                     
-
-                    <a class="p-6 " style="color: #fff;" href="{{route('about')}}">Aboout</a>
-                    <a style="color: #fff;" href="{{route('contact')}}">Contact</a>
-
-
-
+                <div class="">
+                    <a href="{{route('about')}}">Aboout</a><br>
+                    <a  href="{{route('contact')}}">Contact</a><br>
+                </div>
 
 
+
+
+                
+
+
+
+
+ 
                     
 
 
            
-        </div>   
+        </div>
+        <div style="color: #4b5563; background:#9ca3af; padding:50px; " >
+                    <form action="{{route('student.form')}}" method="post">
+                        @csrf
+                        <label  for="">Name</label>
+                        <input type="text" name="name" ><br>
+                        <label  for="">Email</label>
+                        <input type="text" name="email" ><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
     </body>
 </html>

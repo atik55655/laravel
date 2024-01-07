@@ -14,4 +14,8 @@ class FirstController extends Controller
     {
         return view('about');
     }
+    public function form_index(Request $request)
+    {
+        dd($request->all());
+    }
 }

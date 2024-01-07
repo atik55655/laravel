@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FirstController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,13 +41,11 @@ Route::view('/atik','about');
 
 
 
-Route::get('/aboudfgdfgdfgdt', function(){
-    return view('about');
-})->name('about');
+Route::get('/atik',[FirstController::class, 'index'])->name('about');
+Route::get('/atik_contact',[FirstController::class, 'index_about'])->name('contact');
 
-Route::get('/condfgdfgdfgdtact', function(){
-    return view('contact');
-})->name('contact');
+
+
 
 
 

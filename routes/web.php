@@ -42,6 +42,7 @@ Route::view('/atik','about');
 
 
 Route::get('/atik',[FirstController::class, 'index'])->name('about');
+
 Route::get('/atik_contact',[FirstController::class, 'index_about'])->name('contact');
 
 Route::post('/form', [FirstController::class, 'form_index'])->name('student.form');
